@@ -1,3 +1,6 @@
+import Splash from "./components/Splash";
+import Header from "./components/Header/Header";
+
 function App() {
   const callBackendAPI = async () => {
     const response = await fetch("http://localhost:5000/express_backend");
@@ -12,7 +15,8 @@ function App() {
 
   return (
     <div>
-      <p>wow</p>
+      <Header></Header>
+      <Splash></Splash>
     </div>
   );
 }

@@ -1,0 +1,27 @@
+.splash_box {
+  width: 50%;
+  height: 50vh;
+  margin: auto;
+  padding: 2%;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.splash_container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2;
+}
+
+.splash_header {
+  grid-column-start: 1;
+
+  color: #1b1b1b;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .splash_box {
+    width: 100%;
+  }
+}
